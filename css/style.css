@@ -19,6 +19,10 @@ strong {
   font-weight: 500;
 }
 
+/* .container.addtional-margin-top {
+  margin-top: 4.8rem;
+} */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -83,7 +87,7 @@ strong {
 .heading-primary,
 .heading-secondary {
   color: #333;
-  margin-bottom: 4.8rem;
+  margin-bottom: 9.6rem;
 }
 
 .heading-primary {
@@ -128,7 +132,7 @@ strong {
   font-weight: 800;
   border-radius: 9px;
   color: #fff;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -236,6 +240,10 @@ strong {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .step-img {
@@ -402,7 +410,7 @@ strong {
 
 .recipe-link:link,
 .recipe-link:visited {
-  margin-top: 4.4rem;
+  /* margin-top: 4.4rem; */
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 600;
@@ -422,19 +430,24 @@ strong {
 
 /**** SECTION TESTIMONIALS ******/
 .section-testimonials {
-  padding: 9.6rem 0;
 }
 
 .testimonials {
+  background-color: #fae5d3;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
+  grid-template-columns: 0.55fr 0.45fr;
+  /* gap: 4.8rem; */
+}
+
+.testimonial-heading {
+  padding: 9.6rem 3.2rem;
 }
 
 .testimonial {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3.2rem;
+  /* padding: 0 3.2rem; */
 }
 
 .testimonial-img {
@@ -459,9 +472,169 @@ strong {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-container {
+  display: block;
+  transition: all 0.4s;
+  overflow: hidden;
 }
 
 .gallery-container img {
   display: block;
   width: 100%;
+  transition: all 0.3s;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.08);
+}
+
+/**** SECTION TESTIMONIALS ******/
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.plan {
+  text-align: center;
+  height: 100%;
+  width: 69.1%;
+  border-radius: 0.8rem;
+}
+
+.plan--starter {
+  justify-self: center;
+  padding: 2.2rem;
+  border: 2px solid #fae5d3;
+}
+
+.plan--complete {
+  background: #fae5d3;
+  padding: 2.4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan--complete::after {
+  content: "Best Value";
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  background: #ffd43b;
+  padding: 0.8rem 8rem;
+  position: absolute;
+  right: -18%;
+  top: 7%;
+  transform: rotate(45deg);
+}
+
+.plan-name {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+}
+
+.regular-plan {
+  filter: opacity(0.7);
+  text-decoration: line-through;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  color: #333;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  color: #666;
+  margin-bottom: 4.8rem;
+}
+
+.plan-btn {
+  margin-top: 5.4rem;
+}
+
+.margin-top-sm {
+  margin-top: -3.4rem !important;
+}
+
+.plan-content {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.feature-icon {
+  font-size: 3.2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #cf711f;
+  background: #fae5d3;
+  padding: 1.2rem;
+  margin-bottom: 3.2rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+/* SECTION CTA */
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 50rem;
+  background-image: linear-gradient(to right, #e67e22, #ffac63);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 1.1rem;
+  overflow: hidden;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      rgba(230, 125, 34, 0.302),
+      rgba(230, 125, 34, 0.302)
+    ),
+    url(../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-text-box {
+  padding: 4.8rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 2.6rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.8rem;
+  column-gap: 2.4rem;
 }
