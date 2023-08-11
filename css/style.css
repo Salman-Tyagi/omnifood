@@ -19,9 +19,18 @@ strong {
   font-weight: 500;
 }
 
+*:focus {
+  outline: none;
+  outline: 4px solid rgba(230, 125, 34, 0.499);
+}
+
 /* .container.addtional-margin-top {
   margin-top: 4.8rem;
 } */
+
+/****************/
+/* HEADER */
+/****************/
 
 .header {
   display: flex;
@@ -32,7 +41,7 @@ strong {
 }
 
 .logo {
-  height: 3.2rem;
+  height: 2.8rem;
   cursor: pointer;
 }
 
@@ -69,9 +78,13 @@ strong {
   background-color: #cf711f;
 }
 
+/****************/
+/* SECTION HERO */
+/****************/
+
 .section-hero {
   background-color: #fae5d3;
-  padding: 5.2rem 0 9.6rem 0;
+  padding: 9.6rem 0;
 }
 
 .hero {
@@ -187,7 +200,10 @@ strong {
   color: #cf711f;
 }
 
-/**** SECTION FEATURED ******/
+/**********************/
+/* SECTION FEATURED */
+/**********************/
+
 .section-featured {
   padding-top: 4.8rem;
 }
@@ -210,7 +226,9 @@ strong {
   opacity: 0.5;
 }
 
-/**** SECTION HOW ******/
+/**********************/
+/* SECTION HOW */
+/**********************/
 
 .section-how {
   padding: 9.6rem 0;
@@ -240,6 +258,10 @@ strong {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid:not(:last-child) {
@@ -295,7 +317,10 @@ strong {
   line-height: 1.6;
 }
 
-/**** SECTION MEALS ******/
+/**********************/
+/* SECTION MEALS */
+/**********************/
+
 .center-heading {
   text-align: center;
 }
@@ -394,7 +419,7 @@ strong {
   display: flex;
   align-items: center;
   gap: 3.4rem;
-  margin-left: 6.8rem;
+  margin-left: 3.6rem;
 }
 
 .list-icon {
@@ -428,7 +453,10 @@ strong {
   border-bottom: 1px solid transparent;
 }
 
-/**** SECTION TESTIMONIALS ******/
+/**********************/
+/* SECTION TESTIMONIALS */
+/**********************/
+
 .section-testimonials {
 }
 
@@ -453,7 +481,7 @@ strong {
 .testimonial-img {
   height: 7.2rem;
   border-radius: 50%;
-  margin-bottom: 2.2rem;
+  margin-bottom: 2.6rem;
 }
 
 .testimonial-text {
@@ -491,7 +519,10 @@ strong {
   transform: scale(1.08);
 }
 
-/**** SECTION TESTIMONIALS ******/
+/**********************/
+/* SECTION PRICING */
+/**********************/
+
 .section-pricing {
   padding: 9.6rem 0;
 }
@@ -596,16 +627,17 @@ strong {
   line-height: 1.4;
 }
 
+/**********************/
 /* SECTION CTA */
+/**********************/
 
 .section-cta {
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 12.8rem;
 }
 
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  height: 50rem;
   background-image: linear-gradient(to right, #e67e22, #ffac63);
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 1.1rem;
@@ -623,18 +655,133 @@ strong {
 }
 
 .cta-text-box {
-  padding: 4.8rem;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta .heading-secondary {
+  margin-bottom: 3.2rem;
+  color: inherit;
+  letter-spacing: 0.1px;
 }
 
 .cta-text {
   font-size: 1.8rem;
   line-height: 1.8;
-  margin-bottom: 2.6rem;
+  margin-bottom: 3.2rem;
 }
 
 .cta-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 1.8rem;
-  column-gap: 2.4rem;
+  row-gap: 2.4rem;
+  column-gap: 3.2rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input {
+}
+
+.cta-form input,
+.cta-form select {
+  font-size: 1.8rem;
+  padding: 1.6rem;
+  width: 100%;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  border-radius: 11px;
+  background-color: #fae5d3;
+}
+
+.btn-signup {
+  align-self: end;
+  padding: 1.4rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  border: none;
+  background-color: #45260a;
+  color: #fff;
+  border-radius: 1.1rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.btn-signup:hover {
+  color: #333;
+  background-color: #fae5d3;
+}
+
+.cta-form *:focus {
+  outline: none;
+  outline: 4px solid rgba(160, 90, 30, 0.507);
+}
+
+/**********************/
+/* SECTION FOOTER */
+/**********************/
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 2px solid #f7f7f7;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  column-gap: 7.2rem;
+  row-gap: 9.6rem;
+  align-items: start;
+}
+
+.social-logos {
+  list-style: none;
+  font-size: 2.2rem;
+  display: flex;
+  gap: 3.4rem;
+  margin: 3.2rem 0 5.8rem;
+}
+
+.social-icon {
+  color: #6f6f6f;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #888;
+}
+
+.address {
+  font-style: normal;
+  font-size: 1.7rem;
+  margin-bottom: 3.2rem;
+}
+
+.footer-heading {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #6f6f6f;
+  font-size: 1.7rem;
+  font-style: normal;
 }
