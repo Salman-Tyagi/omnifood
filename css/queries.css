@@ -1,0 +1,115 @@
+/**************************/
+/* BELOW 1360px (Smaller Desktops) */
+/**************************/
+
+/* 85em = 85 * 16 => 1360px */
+@media (max-width: 85em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 1360px (Landscape Tablets) */
+/**************************/
+
+/* 1200px / 16px => 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .princing-plan--complete {
+    padding: 3.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 976px (Tablets) */
+/**************************/
+
+@media (max-width: 61em) {
+  html {
+    font-size: 50%;
+  }
+
+  /* .main-nav-list {
+    gap: 3.2rem;
+  } */
+
+  .section-hero {
+    text-align: center;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .logos img {
+    height: 2.8rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .princing-plan--starter {
+    padding: 3.2rem;
+  }
+
+  .grid--3-cols {
+    gap: 3.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 0.55fr 0.45fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.4rem;
+  }
+
+  .list-item {
+    line-height: 1.4;
+  }
+
+  .grid--4-cols {
+    gap: 4.8rem;
+  }
+}
