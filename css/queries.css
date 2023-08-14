@@ -113,6 +113,8 @@
     gap: 4.8rem;
   }
 
+  /* MOBILE NAVIGATION */
+
   .btn-mobile-nav {
     display: block;
   }
@@ -150,6 +152,7 @@
     pointer-events: all;
     visibility: visible;
     transform: translateX(0);
+    /* overflow-y: hidden; */
   }
 
   .nav-open .icon-mobile-nav[name='close-outline'] {
@@ -309,5 +312,3 @@
     padding: 1.4rem 3rem;
   }
 }
-
-/* @media (max-width: ); */
