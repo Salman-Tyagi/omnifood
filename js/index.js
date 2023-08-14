@@ -42,4 +42,22 @@ allLinks.forEach(link => {
   });
 });
 
-// <=============
+// <============= STICKY NAVIGATION ===========>
+
+const sectionHeroEl = document.querySelector('.section-hero');
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const entry = entries[0];
+
+    if (!entry.isIntersecting) document.body.classList.add('sticky');
+
+    if (entry.isIntersecting) document.body.classList.remove('sticky');
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: '-80px',
+  }
+);
+observer.observe(sectionHeroEl);
