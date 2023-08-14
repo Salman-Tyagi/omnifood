@@ -9,9 +9,9 @@ currentYear.textContent = year;
 const menuBtnEl = document.querySelector('.btn-mobile-nav');
 const headerEl = document.querySelector('.header');
 
-menuBtnEl.addEventListener('click', function () {
-  headerEl.classList.toggle('nav-open');
-});
+menuBtnEl.addEventListener('click', () =>
+  headerEl.classList.toggle('nav-open')
+);
 
 // <======== Smooth scrolling by the Javascript ==========>
 
@@ -30,7 +30,7 @@ allLinks.forEach(link => {
         behavior: 'smooth',
       });
 
-    //   Got to clicked section
+    //   Go to clicked section
     if (href !== '#' && href.startsWith('#')) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: 'smooth' });
