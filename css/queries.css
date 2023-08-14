@@ -118,7 +118,8 @@
   }
 
   .main-nav {
-    background: rgba(255, 255, 255, 0.962);
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(0.5rem);
     position: absolute;
     left: 0;
     top: 0;
@@ -151,11 +152,11 @@
     transform: translateX(0);
   }
 
-  .nav-open .icon-mobile-nav[name="close-outline"] {
+  .nav-open .icon-mobile-nav[name='close-outline'] {
     display: block;
   }
 
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
+  .nav-open .icon-mobile-nav[name='menu-outline'] {
     display: none;
   }
 
@@ -223,6 +224,13 @@
 @media (max-width: 34em) {
   .logos img {
     height: 1.2rem;
+  }
+
+  .section-pricing,
+  .section-hero,
+  .section-cta,
+  .footer {
+    padding: 4.8rem 0;
   }
 
   .grid--2-cols,

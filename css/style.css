@@ -67,7 +67,6 @@
   border: none;
   background: #fdf2e9;
   color: #45260a;
-
   display: none;
 }
 
@@ -90,7 +89,7 @@
 }
 
 .sticky .section-hero {
-  margin-bottom: 9.6rem;
+  margin-top: 9.6rem;
 }
 
 /**************************/
