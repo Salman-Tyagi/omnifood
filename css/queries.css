@@ -185,6 +185,20 @@
   .logos img {
     height: 2.4rem;
   }
+
+  .grid--footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logo-col {
+    grid-row: 3;
+    grid-column: span 2;
+    justify-content: center;
+  }
+
+  .address-col {
+    width: 70%;
+  }
 }
 
 /**************************/
@@ -195,8 +209,14 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .grid--footer {
+  /* .grid--footer {
     grid-template-columns: repeat(3, 1fr);
+  } */
+
+  .logo-col {
+    /* grid-row: 3;
+    grid-column: span 2; */
+    justify-content: center;
   }
 
   .diets {
@@ -244,19 +264,20 @@
   }
 
   .grid {
-    justify-items: center;
+    /* justify-items: center; */
   }
 
   .grid--footer {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .logo-col {
-    grid-row: 4;
+    grid-row: 3;
+    grid-column: span 2;
   }
 
   .address-col {
-    grid-row: 5;
+    /* grid-row: 5; */
   }
 
   .gallery {
@@ -310,5 +331,13 @@
   .btn:visited {
     font-size: 1.8rem;
     padding: 1.4rem 3rem;
+  }
+}
+
+/* Below 360px (small mobile screens */
+
+@media (max-width: 22.5em) {
+  .grid--footer {
+    row-gap: 5.8rem;
   }
 }
