@@ -42,7 +42,7 @@ allLinks.forEach(link => {
 
     //   Hide mobile navigation
     if (link.classList.contains('main-nav-link')) {
-      headerEl.classList.toggle('nav-open');
+      headerEl.classList.remove('nav-open');
       document.querySelector('html').style.removeProperty('overflow');
     }
   });
