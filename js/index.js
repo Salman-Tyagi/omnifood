@@ -41,12 +41,10 @@ allLinks.forEach(link => {
     }
 
     //   Hide mobile navigation
-    if (link.classList.contains('main-nav-link'))
+    if (link.classList.contains('main-nav-link')) {
       headerEl.classList.toggle('nav-open');
-
-    if (headerEl.classList.contains('nav-open'))
-      document.querySelector('html').style.overflow = 'hidden';
-    else document.querySelector('html').style.removeProperty('overflow');
+      document.querySelector('html').style.removeProperty('overflow');
+    }
   });
 });
 
