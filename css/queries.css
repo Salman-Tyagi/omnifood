@@ -187,13 +187,12 @@
   }
 
   .grid--footer {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .logo-col {
-    grid-row: 3;
-    grid-column: span 2;
-    justify-content: center;
+    grid-row: 2;
+    grid-column: span 4;
   }
 
   .address-col {
@@ -213,11 +212,11 @@
     grid-template-columns: repeat(3, 1fr);
   } */
 
-  .logo-col {
-    /* grid-row: 3;
-    grid-column: span 2; */
+  /* .logo-col {
+    grid-row: 3;
+    grid-column: span 2; 
     justify-content: center;
-  }
+  } */
 
   .diets {
     grid-column: span 2;
